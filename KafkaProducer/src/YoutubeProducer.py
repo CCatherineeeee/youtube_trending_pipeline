@@ -32,7 +32,7 @@ if __name__ == '__main__':
             print("Produced event to topic {topic}: key = {key:12} value = {value:12}".format(
                 topic=msg.topic(), key=msg.key().decode('utf-8'), value=msg.value().decode('utf-8')))
 
-    response = youtube_data()
+    response = youtube_trending_data()
     
     video_infos = response["items"]
     print (len(video_infos))

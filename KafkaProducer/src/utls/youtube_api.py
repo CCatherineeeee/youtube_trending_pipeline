@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import googleapiclient.errors
 from googleapiclient.discovery import build
 
-def youtube_data():
+def youtube_trending_data():
     load_dotenv()
     api_key = os.getenv('youtubeAPI')  # Please set your API key
     api_service_name = "youtube"
@@ -22,4 +22,4 @@ def youtube_data():
     '''
 
 if __name__ == "__main__":
-    youtube_data()
+    youtube_trending_data()
