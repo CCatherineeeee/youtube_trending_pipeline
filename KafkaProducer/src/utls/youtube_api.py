@@ -17,14 +17,6 @@ def youtube_data():
     )
     response = request.execute()
     return response
-    # print(response)
-    # video_infos = response["items"]
-    # print (len(video_infos))
-    # count = 0
-    # for info in video_infos:
-    #     print (count)
-    #     print (info)
-    #     count += 1
     '''
     content: 
     '''
